@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class LoginActivity extends BaseActivity {
+public class BoardActivity extends BaseActivity {
 
     private WebView webview; //웹뷰
     private WebSettings webSetting;
@@ -179,7 +179,7 @@ public class LoginActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://11av.raonnet.com/bbs/login.php");
+        webview.loadUrl("http://11av.raonnet.com/bbs/board.php?bo_table=test");
     }
 
     public class WebAppInterface {

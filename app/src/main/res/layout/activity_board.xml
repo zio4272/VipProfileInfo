@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cgb.vipprofileinfo.LoginActivity">
+    tools:context="com.cgb.vipprofileinfo.BoardActivity">
+
 
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </LinearLayout>
