@@ -18,16 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         // 하드웨어 가속 사용
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".BoardActivity" />
+        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Translucent">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".BoardActivity" />
-        <activity android:name=".LoginActivity">
 
 
         </activity>

@@ -5,16 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
-    tools:context="com.cgb.vipprofileinfo.MainActivity">
-
+    tools:context="com.cgb.vipprofileinfo.SplashActivity">
 
     <ImageView
-        android:id="@+id/mainImg"
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher_round"/>
+        android:src="@drawable/sp1"
+        android:scaleType="centerCrop"/>
 
 </LinearLayout>
-
-

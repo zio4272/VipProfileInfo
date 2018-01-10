@@ -1,9 +1,13 @@
 package com.cgb.vipprofileinfo;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class MainActivity extends BaseActivity {
 
@@ -39,6 +43,8 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        Glide.with(mContext).load(R.drawable.main1).into(mainImg);
 
     }
 
