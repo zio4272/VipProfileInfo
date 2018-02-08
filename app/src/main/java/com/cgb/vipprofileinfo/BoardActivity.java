@@ -179,7 +179,7 @@ public class BoardActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://11av.raonnet.com/bbs/board.php?bo_table=test");
+        webview.loadUrl("http://zio.raonnet.com/");
     }
 
     public class WebAppInterface {

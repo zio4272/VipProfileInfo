@@ -28,7 +28,7 @@ public class SplashActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent myIntent = new Intent(mContext, MainActivity.class);
+                Intent myIntent = new Intent(mContext, LoginActivity.class);
                 startActivity(myIntent);
                 finish();
             }

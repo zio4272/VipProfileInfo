@@ -7,9 +7,58 @@
     android:orientation="vertical"
     tools:context="com.cgb.vipprofileinfo.BoardActivity">
 
-
-    <WebView
-        android:id="@+id/webview"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/goBackBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="뒤로"/>
+
+
+            <Button
+                android:id="@+id/goForwardBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="앞으로"/>
+
+            <Button
+                android:id="@+id/homeBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="처음으로"/>
+
+            <Button
+                android:id="@+id/finishBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="종료"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
 </LinearLayout>

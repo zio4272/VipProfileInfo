@@ -11,6 +11,7 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
 import android.webkit.ValueCallback;
@@ -18,6 +19,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.File;
@@ -36,6 +38,10 @@ public class LoginActivity extends BaseActivity {
     private ValueCallback<Uri> mUploadMessage;
     private ValueCallback<Uri[]> mFilePathCallback;
     private String mCameraPhotoPath;
+    private android.widget.Button finishBtn;
+    private Button goBackBtn;
+    private Button goForwardBtn;
+    private Button homeBtn;
 
 
     @Override
@@ -49,6 +55,36 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
+        goBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                webview.goBack();
+            }
+        });
+
+        goForwardBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                webview.goForward();
+            }
+        });
+
+        finishBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -179,7 +215,7 @@ public class LoginActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://11av.raonnet.com/bbs/login.php");
+        webview.loadUrl("http://zio.raonnet.com/");
     }
 
     public class WebAppInterface {
@@ -288,7 +324,10 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-
+        this.finishBtn = (Button) findViewById(R.id.finishBtn);
+        this.homeBtn = (Button) findViewById(R.id.homeBtn);
+        this.goForwardBtn = (Button) findViewById(R.id.goForwardBtn);
+        this.goBackBtn = (Button) findViewById(R.id.goBackBtn);
         this.webview = (WebView) findViewById(R.id.webview);
     }
 

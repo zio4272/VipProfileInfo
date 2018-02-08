@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VipProfileInfo.iml" filepath="$PROJECT_DIR$/VipProfileInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VipProfileInfo.iml" filepath="$PROJECT_DIR$/.idea/VipProfileInfo.iml" />
+      <module fileurl="file://C:\Users\PC\AndroidStudioProjects\VipProfileInfo\VipProfileInfo.iml" filepath="C:\Users\PC\AndroidStudioProjects\VipProfileInfo\VipProfileInfo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
