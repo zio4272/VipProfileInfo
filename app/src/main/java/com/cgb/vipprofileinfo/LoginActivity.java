@@ -56,34 +56,34 @@ public class LoginActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
-        goBackBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                webview.goBack();
-            }
-        });
-
-        goForwardBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                webview.goForward();
-            }
-        });
-
-        finishBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        homeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(mContext, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//        goBackBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                webview.goBack();
+//            }
+//        });
+//
+//        goForwardBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                webview.goForward();
+//            }
+//        });
+//
+//        finishBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
+//
+//        homeBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(mContext, LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
     }
@@ -324,10 +324,10 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-        this.finishBtn = (Button) findViewById(R.id.finishBtn);
-        this.homeBtn = (Button) findViewById(R.id.homeBtn);
-        this.goForwardBtn = (Button) findViewById(R.id.goForwardBtn);
-        this.goBackBtn = (Button) findViewById(R.id.goBackBtn);
+//        this.finishBtn = (Button) findViewById(R.id.finishBtn);
+//        this.homeBtn = (Button) findViewById(R.id.homeBtn);
+//        this.goForwardBtn = (Button) findViewById(R.id.goForwardBtn);
+//        this.goBackBtn = (Button) findViewById(R.id.goBackBtn);
         this.webview = (WebView) findViewById(R.id.webview);
     }
 
