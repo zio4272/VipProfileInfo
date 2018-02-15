@@ -40,7 +40,7 @@ public class SplashActivity extends BaseActivity {
     @Override
     public void setValues() {
 
-        Glide.with(mContext).load(R.drawable.sp1).into(img);
+       // Glide.with(mContext).load(R.drawable.app_icon).into(img);
 
     }
 

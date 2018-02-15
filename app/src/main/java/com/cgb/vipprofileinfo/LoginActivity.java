@@ -215,7 +215,7 @@ public class LoginActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://zio.raonnet.com/");
+        webview.loadUrl("http://dododo.raonnet.com/");
     }
 
     public class WebAppInterface {
