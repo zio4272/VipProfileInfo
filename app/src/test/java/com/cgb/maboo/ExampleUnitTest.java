@@ -1,4 +1,4 @@
-package com.cgb.vipprofileinfo;
+package com.cgb.maboo;
 
 import org.junit.Test;
 

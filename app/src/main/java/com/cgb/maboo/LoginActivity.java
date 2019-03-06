@@ -1,4 +1,4 @@
-package com.cgb.vipprofileinfo;
+package com.cgb.maboo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,6 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
 import android.webkit.ValueCallback;
@@ -215,7 +214,7 @@ public class LoginActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://dododo.raonnet.com/");
+        webview.loadUrl("http://maboo.co.kr/");
     }
 
     public class WebAppInterface {

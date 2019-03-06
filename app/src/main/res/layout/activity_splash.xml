@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-    tools:context="com.cgb.vipprofileinfo.SplashActivity">
+    tools:context="com.cgb.maboo.SplashActivity">
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/app_icon"
+        android:src="@drawable/mobile_logo"
+        android:scaleType="center"
       />
 
 </LinearLayout>

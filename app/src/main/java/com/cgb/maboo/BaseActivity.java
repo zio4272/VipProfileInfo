@@ -1,4 +1,4 @@
-package com.cgb.vipprofileinfo;
+package com.cgb.maboo;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

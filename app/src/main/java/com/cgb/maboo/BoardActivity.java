@@ -1,4 +1,4 @@
-package com.cgb.vipprofileinfo;
+package com.cgb.maboo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -179,7 +179,7 @@ public class BoardActivity extends BaseActivity {
                 startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
             }
         });
-        webview.loadUrl("http://dododo.raonnet.com/");
+        webview.loadUrl("http://maboo.co.kr/");
     }
 
     public class WebAppInterface {

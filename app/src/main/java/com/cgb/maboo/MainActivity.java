@@ -1,9 +1,7 @@
-package com.cgb.vipprofileinfo;
+package com.cgb.maboo;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.DrawableRes;
 import android.view.View;
 import android.widget.ImageView;
 
